@@ -41,7 +41,7 @@
             <div class="container">
                 <ul class="navbar-list">
                     <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="#connect">Connect</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#connection">Connection</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#table">Table</a></li>
                     <!--
           <li class="navbar-item">
@@ -107,9 +107,9 @@
             </div>
         </div>
 
-        <!-- Connect -->
-        <div class="docs-section" id="connect">
-            <h6 class="docs-header">Connect</h6>
+        <!-- Connection -->
+        <div class="docs-section" id="connection">
+            <h6 class="docs-header">Connection</h6>
             <div class="row">
                 <div class="four columns">
                     <img src="images/bluetooth.svg" />
@@ -119,7 +119,9 @@
                 </div>
             </div>
 
-            <button class="button-primary">Connect</button>
+            <button class="button-primary" id="connect">Connect</button>
+            <input id="colorpicker" type="color">
+
             <!--
             <pre class="code-example">
                 <code class="code-example-body prettyprint">
@@ -241,7 +243,6 @@
         document.querySelector('#connect').addEventListener('click', scan);
         document.querySelector('#colorpicker').addEventListener('input', handleColorPicker);
         statusElement = document.querySelector('#status');
-
     }
 
     window.addEventListener('load', init);
